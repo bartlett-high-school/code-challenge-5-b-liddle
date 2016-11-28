@@ -1,0 +1,113 @@
+<!-- Code Challenge #5 | 25 Points -->
+
+<!-- Directions:
+
+Step 1:
+Select all of this document, copy and paste it into a new document in sublime text.
+
+Step 2:
+Inside of the .container div, insert typography tags h2, h3, h4, h5, h6. Add some content inside of each tag. 
+
+Step 3: 
+After each h tag, add a p tag with some content inside of it.
+
+Step 3:
+In the style tag, write some CSS for each of the tags you added to create a well-designed typography style tile. Consider things like font-family, font-size, color, letter-spacing, line-height, etc.
+
+Step 4: 
+Paste all the code from your sublime document back into github and commit your changes.
+
+BONUS: Implement a web font from font-squirrel correctly for 3 extra points.
+
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Code Challenge #5</title>
+		<style>
+			@font-face {
+	    		font-family: 'fira_sansbold';
+	    		src: url('css/fonts/firasans-bold-webfont.woff2') format('woff2'),
+	         	url('firasans-bold-webfont.woff') format('woff');
+	    		font-weight: normal;
+	    		font-style: normal;
+
+			}
+			@font-face {
+			    font-family: 'fira_sansitalic';
+			    src: url('css/fonts/firasans-italic-webfont.woff2') format('woff2'),
+			         url('firasans-italic-webfont.woff') format('woff');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+			@font-face {
+			    font-family: 'fira_sansregular';
+			    src: url('css/fonts/firasans-regular-webfont.woff2') format('woff2'),
+			         url('firasans-regular-webfont.woff') format('woff');
+			    font-weight: normal;
+			    font-style: normal;
+			}
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			header {
+				padding: 50px 0;
+			}
+			header h1 {
+				text-align: center;
+			}
+			section {
+				padding: 25px 0;
+			}
+			h2{
+				font-family: 'fira_sansbold'; 
+				font-size: 24px;
+				line-height: 30px;
+				letter-spacing: .75px;
+			}
+			h3{
+				font-family: 'fira_sansregular';
+				color: lightblue;
+				line-height: 25px;
+				letter-spacing: .75px;
+			}
+			h4{
+				font-family: 'fira_sansitalic';
+				font-size: 15px;
+				line-height: 25px;
+				letter-spacing: .75px;
+			}
+			h5{
+				font-family: 'fira_sansregular';
+				line-height: 25px;
+				letter-spacing: .75px;
+
+			}
+			h6{
+				font-family: 'fira_sansbold';
+				line-height: 25px;
+				letter-spacing: .75px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Code Challenge #5</h1>
+		</header>
+		<section>
+			<div class="container">
+				<h2><p>This is the h2</p></h2>
+				<h3><p>This is the h3</p></h3>
+				<h4><p>This is the h4</p></h4>
+				<h5><p>This is the h5</p></h5>
+				<h6><p>This is the h6</p></h6>
+			</div>
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>
